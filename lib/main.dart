@@ -3,6 +3,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:ui_projects/views/chat_screen.dart';
 import 'package:ui_projects/views/iot_applications.dart';
 import 'package:ui_projects/views/modern_light_switch.dart';
+import 'package:ui_projects/views/rider_profile.dart';
 import 'package:ui_projects/views/stacked_carousel_view.dart';
 
 void main() {
@@ -19,10 +20,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 190, 190, 190),
+        ),
       ),
-      home: IOTApplications(),
+      home: RiderProfile(),
     );
   }
 }
